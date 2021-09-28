@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [birthdate, setBirthdate] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Pallindrome Birthday</h1>
       </header>
+      <main>
+        <form>
+          <label htmlFor="birthdate">Enter your birthdate</label>
+          <input
+            type="date"
+            name="birthdate"
+            value={birthdate}
+            onChange={(e) => setBirthdate(e.target.value)}
+          />
+          <button>Check</button>
+        </form>
+        <p></p>
+      </main>
+      <footer>
+        Create with love by <a href="https://atulgairola.tech">Atul Gairola</a>
+      </footer>
     </div>
   );
 }
