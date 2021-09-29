@@ -228,7 +228,7 @@ function App() {
           />
           <button onClick={handleSubmit}>Check</button>
         </form>
-        {result && <p>{result}</p>}
+        {result && <p className="result">{result}</p>}
       </main>
       <footer>
         Create with love by <a href="https://atulgairola.tech">Atul Gairola</a>

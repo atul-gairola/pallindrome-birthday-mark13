@@ -1,3 +1,8 @@
+header {
+  padding: 20px 50px;
+  margin-bottom: 50px;
+}
+
 .App {
   text-align: center;
 }
@@ -30,6 +35,7 @@ button {
   border: none;
   font-size: 1.1rem;
   font-weight: bold;
+  background: #b97a95;
 }
 
 footer {
@@ -37,4 +43,10 @@ footer {
   bottom: 0;
   width: 100vw;
   padding: 20px;
+}
+
+.result {
+  margin: 50px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
